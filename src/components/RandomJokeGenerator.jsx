@@ -26,7 +26,7 @@ export const RandomJokeGenerator = () => {
 
   return (
     <>
-      <div className="border w-204 min-h-72 px-10 py-3 bg-white rounded-xl">
+      <div className="border w-204 min-h-72 px-10 py-3 my-40 bg-white rounded-xl">
         <h1 className="font-bold text-6xl text-center text-yellow-500 font-nerko my-2 ">
           Joke of the Day
         </h1>
@@ -41,7 +41,7 @@ export const RandomJokeGenerator = () => {
             New Joke
           </button>
         </div>
-        <div className="font-mono ">
+        <div className="font-mono text-wrap">
           {joke && joke.type === "single" ? (
             <>
               <p className="my-5 text-center text-wrap text-3xl">{`${joke.joke}`}</p>
