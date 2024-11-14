@@ -10,7 +10,7 @@ export const RandomJokeGenerator = () => {
 
   const fetchJoke = async () => {
     const response = await axios.get(
-      "https://v2.jokeapi.dev/joke/Any?format=json"
+      "https://v2.jokeapi.dev/joke/Programming?format=json"
     );
     setJoke(response.data);
     setDeliveryIsVisible(false);
@@ -26,7 +26,7 @@ export const RandomJokeGenerator = () => {
 
   return (
     <>
-      <div className="border w-204 min-h-72 px-10 py-3 my-40 bg-white rounded-xl">
+      <div className="border w-204 min-h-72 px-10 py-3 bg-white rounded-xl">
         <h1 className="font-bold text-6xl text-center text-yellow-500 font-nerko my-2 ">
           Joke of the Day
         </h1>
